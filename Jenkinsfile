@@ -11,8 +11,8 @@ pipeline {
                 def input_value = params.USER_INPUT
                 echo "Received input value: ${input_value}"
                 sh '''
-                chmod 777 users-creation-and-check.py
-                python -m pdb users-creation-and-check.py ${input_value}
+                chmod 777 test.py
+                python test.py
                 '''
               }
             }
