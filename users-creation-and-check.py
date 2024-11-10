@@ -1,4 +1,6 @@
 # A list to store registered users
+import pdb
+pdb.set_trace()
 users = []
 
 # Function to register a new user
