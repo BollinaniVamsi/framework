@@ -1,13 +1,15 @@
 import pdb
+import logging
+
+# Set up logging to display debug info in Jenkins console
+logging.basicConfig(level=logging.DEBUG)
 
 def test_function():
     x = 10
-    y = 5
-
-    # Start pdb
-    pdb.set_trace()
-    
-    # Add pdb commands to step through the code
-    pdb.run('z = x / y')  # This will break and catch the error
+    y = 0
+    logging.debug(f'Variables before division: x={x}, y={y}')
+    pdb.set_trace()  # or just use logging without an interactive pdb prompt
+    z = x / y
+    print(z)
 
 test_function()
