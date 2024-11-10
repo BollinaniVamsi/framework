@@ -2,7 +2,7 @@ import pdb
 
 def test_function():
     x = 10
-    y = 0
+    y = 5
 
     # Start pdb
     pdb.set_trace()
